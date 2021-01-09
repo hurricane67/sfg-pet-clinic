@@ -1,6 +1,8 @@
 package zak.springframework.sfgpetclinic.model;
 
-public class PetType {
+import java.io.Serializable;
+
+public class PetType implements Serializable {
     private String name;
 
     public String getName() {
