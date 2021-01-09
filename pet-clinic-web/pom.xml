@@ -16,8 +16,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>zak.springframework</groupId>
             <artifactId>pet-clinic-data</artifactId>
+            <groupId>zak.springframework</groupId>
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
