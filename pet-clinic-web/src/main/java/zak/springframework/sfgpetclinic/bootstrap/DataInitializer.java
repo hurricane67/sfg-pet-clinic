@@ -6,8 +6,6 @@ import zak.springframework.sfgpetclinic.model.Owner;
 import zak.springframework.sfgpetclinic.model.Vet;
 import zak.springframework.sfgpetclinic.services.OwnerService;
 import zak.springframework.sfgpetclinic.services.VetService;
-import zak.springframework.sfgpetclinic.services.map.OwnerServiceMap;
-import zak.springframework.sfgpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataInitializer implements CommandLineRunner {
@@ -16,9 +14,9 @@ public class DataInitializer implements CommandLineRunner {
     private final VetService vetService;
 
 
-    public DataInitializer() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataInitializer(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
